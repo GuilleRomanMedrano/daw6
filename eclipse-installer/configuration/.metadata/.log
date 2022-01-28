@@ -1,0 +1,200 @@
+!SESSION 2022-01-15 20:53:49.697 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data @noDefault
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2022-01-15 20:54:57.999
+!MESSAGE Loading 'file:/home/guilleromanm/.p2/org.eclipse.equinox.p2.core/cache/' failed. retry=1
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2022-01-15 20:54:58.008
+!MESSAGE Loading 'file:/home/guilleromanm/.p2/org.eclipse.equinox.p2.core/cache/' failed. retry=2
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2022-01-15 20:54:58.013
+!MESSAGE Loading 'file:/home/guilleromanm/.p2/org.eclipse.equinox.p2.core/cache/' failed. retry=1
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2022-01-15 20:54:58.013
+!MESSAGE Loading 'file:/home/guilleromanm/.p2/org.eclipse.equinox.p2.core/cache/' failed. retry=2
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2022-01-15 20:54:58.024
+!MESSAGE Loading 'file:/home/guilleromanm/.p2/pool/' failed. retry=1
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2022-01-15 20:54:58.029
+!MESSAGE Loading 'file:/home/guilleromanm/.p2/pool/' failed. retry=2
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2022-01-15 20:54:58.031
+!MESSAGE Loading 'file:/home/guilleromanm/.p2/pool/' failed. retry=1
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2022-01-15 20:54:58.032
+!MESSAGE Loading 'file:/home/guilleromanm/.p2/pool/' failed. retry=2
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2022-01-15 20:55:03.811
+!MESSAGE Connection to https://ftp.snt.utwente.nl/pub/software/eclipse/releases/2021-12/202112081000/plugins/org.eclipse.core.net.linux.x86_64_1.2.500.v20210510-1619.jar failed on PKIX path validation failed: java.security.cert.CertPathValidatorException: validity check failed. Retry attempt 0 started
+!STACK 0
+javax.net.ssl.SSLHandshakeException: PKIX path validation failed: java.security.cert.CertPathValidatorException: validity check failed
+	at java.base/sun.security.ssl.Alert.createSSLException(Unknown Source)
+	at java.base/sun.security.ssl.TransportContext.fatal(Unknown Source)
+	at java.base/sun.security.ssl.TransportContext.fatal(Unknown Source)
+	at java.base/sun.security.ssl.TransportContext.fatal(Unknown Source)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.checkServerCerts(Unknown Source)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.onCertificate(Unknown Source)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.consume(Unknown Source)
+	at java.base/sun.security.ssl.SSLHandshake.consume(Unknown Source)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(Unknown Source)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(Unknown Source)
+	at java.base/sun.security.ssl.TransportContext.dispatch(Unknown Source)
+	at java.base/sun.security.ssl.SSLTransport.decode(Unknown Source)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(Unknown Source)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(Unknown Source)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:436)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1003)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:995)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:991)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: sun.security.validator.ValidatorException: PKIX path validation failed: java.security.cert.CertPathValidatorException: validity check failed
+	at java.base/sun.security.validator.PKIXValidator.doValidate(Unknown Source)
+	at java.base/sun.security.validator.PKIXValidator.engineValidate(Unknown Source)
+	at java.base/sun.security.validator.Validator.validate(Unknown Source)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(Unknown Source)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(Unknown Source)
+	... 28 more
+Caused by: java.security.cert.CertPathValidatorException: validity check failed
+	at java.base/sun.security.provider.certpath.PKIXMasterCertPathValidator.validate(Unknown Source)
+	at java.base/sun.security.provider.certpath.PKIXCertPathValidator.validate(Unknown Source)
+	at java.base/sun.security.provider.certpath.PKIXCertPathValidator.validate(Unknown Source)
+	at java.base/sun.security.provider.certpath.PKIXCertPathValidator.engineValidate(Unknown Source)
+	at java.base/java.security.cert.CertPathValidator.validate(Unknown Source)
+	... 33 more
+Caused by: java.security.cert.CertificateNotYetValidException: NotBefore: Mon Jan 17 08:10:11 CET 2022
+	at java.base/sun.security.x509.CertificateValidity.valid(Unknown Source)
+	at java.base/sun.security.x509.X509CertImpl.checkValidity(Unknown Source)
+	at java.base/sun.security.provider.certpath.BasicChecker.verifyValidity(Unknown Source)
+	at java.base/sun.security.provider.certpath.BasicChecker.check(Unknown Source)
+	... 38 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2022-01-15 20:55:04.056
+!MESSAGE Connection to https://mirror.tspu.ru/eclipse/releases/2021-12/202112081000/binary/org.eclipse.platform_root_4.22.0.v20211124-1800 failed on PKIX path validation failed: java.security.cert.CertPathValidatorException: validity check failed. Retry attempt 0 started
+!STACK 0
+javax.net.ssl.SSLHandshakeException: PKIX path validation failed: java.security.cert.CertPathValidatorException: validity check failed
+	at java.base/sun.security.ssl.Alert.createSSLException(Unknown Source)
+	at java.base/sun.security.ssl.TransportContext.fatal(Unknown Source)
+	at java.base/sun.security.ssl.TransportContext.fatal(Unknown Source)
+	at java.base/sun.security.ssl.TransportContext.fatal(Unknown Source)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.checkServerCerts(Unknown Source)
+	at java.base/sun.security.ssl.CertificateStatus$CertificateStatusConsumer.consume(Unknown Source)
+	at java.base/sun.security.ssl.SSLHandshake.consume(Unknown Source)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(Unknown Source)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(Unknown Source)
+	at java.base/sun.security.ssl.TransportContext.dispatch(Unknown Source)
+	at java.base/sun.security.ssl.SSLTransport.decode(Unknown Source)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(Unknown Source)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(Unknown Source)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:436)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1003)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:995)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:991)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: sun.security.validator.ValidatorException: PKIX path validation failed: java.security.cert.CertPathValidatorException: validity check failed
+	at java.base/sun.security.validator.PKIXValidator.doValidate(Unknown Source)
+	at java.base/sun.security.validator.PKIXValidator.engineValidate(Unknown Source)
+	at java.base/sun.security.validator.Validator.validate(Unknown Source)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(Unknown Source)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(Unknown Source)
+	... 27 more
+Caused by: java.security.cert.CertPathValidatorException: validity check failed
+	at java.base/sun.security.provider.certpath.PKIXMasterCertPathValidator.validate(Unknown Source)
+	at java.base/sun.security.provider.certpath.PKIXCertPathValidator.validate(Unknown Source)
+	at java.base/sun.security.provider.certpath.PKIXCertPathValidator.validate(Unknown Source)
+	at java.base/sun.security.provider.certpath.PKIXCertPathValidator.engineValidate(Unknown Source)
+	at java.base/java.security.cert.CertPathValidator.validate(Unknown Source)
+	... 32 more
+Caused by: java.security.cert.CertificateNotYetValidException: NotBefore: Sun Jan 16 20:22:26 CET 2022
+	at java.base/sun.security.x509.CertificateValidity.valid(Unknown Source)
+	at java.base/sun.security.x509.X509CertImpl.checkValidity(Unknown Source)
+	at java.base/sun.security.provider.certpath.BasicChecker.verifyValidity(Unknown Source)
+	at java.base/sun.security.provider.certpath.BasicChecker.check(Unknown Source)
+	... 37 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2022-01-15 20:55:04.330
+!MESSAGE Connection to https://ftp.linux.org.tr/eclipse//releases/2021-12/202112081000/plugins/org.eclipse.rcp_4.22.0.v20211124-1800.jar failed on PKIX path validation failed: java.security.cert.CertPathValidatorException: validity check failed. Retry attempt 0 started
+!STACK 0
+javax.net.ssl.SSLHandshakeException: PKIX path validation failed: java.security.cert.CertPathValidatorException: validity check failed
+	at java.base/sun.security.ssl.Alert.createSSLException(Unknown Source)
+	at java.base/sun.security.ssl.TransportContext.fatal(Unknown Source)
+	at java.base/sun.security.ssl.TransportContext.fatal(Unknown Source)
+	at java.base/sun.security.ssl.TransportContext.fatal(Unknown Source)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.checkServerCerts(Unknown Source)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.onCertificate(Unknown Source)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.consume(Unknown Source)
+	at java.base/sun.security.ssl.SSLHandshake.consume(Unknown Source)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(Unknown Source)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(Unknown Source)
+	at java.base/sun.security.ssl.TransportContext.dispatch(Unknown Source)
+	at java.base/sun.security.ssl.SSLTransport.decode(Unknown Source)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(Unknown Source)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(Unknown Source)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:436)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1003)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:995)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:991)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: sun.security.validator.ValidatorException: PKIX path validation failed: java.security.cert.CertPathValidatorException: validity check failed
+	at java.base/sun.security.validator.PKIXValidator.doValidate(Unknown Source)
+	at java.base/sun.security.validator.PKIXValidator.engineValidate(Unknown Source)
+	at java.base/sun.security.validator.Validator.validate(Unknown Source)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(Unknown Source)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(Unknown Source)
+	... 28 more
+Caused by: java.security.cert.CertPathValidatorException: validity check failed
+	at java.base/sun.security.provider.certpath.PKIXMasterCertPathValidator.validate(Unknown Source)
+	at java.base/sun.security.provider.certpath.PKIXCertPathValidator.validate(Unknown Source)
+	at java.base/sun.security.provider.certpath.PKIXCertPathValidator.validate(Unknown Source)
+	at java.base/sun.security.provider.certpath.PKIXCertPathValidator.engineValidate(Unknown Source)
+	at java.base/java.security.cert.CertPathValidator.validate(Unknown Source)
+	... 33 more
+Caused by: java.security.cert.CertificateNotYetValidException: NotBefore: Fri Jan 21 06:07:46 CET 2022
+	at java.base/sun.security.x509.CertificateValidity.valid(Unknown Source)
+	at java.base/sun.security.x509.X509CertImpl.checkValidity(Unknown Source)
+	at java.base/sun.security.provider.certpath.BasicChecker.verifyValidity(Unknown Source)
+	at java.base/sun.security.provider.certpath.BasicChecker.check(Unknown Source)
+	... 38 more
